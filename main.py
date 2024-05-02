@@ -36,3 +36,26 @@ if __name__ == "__main__":
 
   In this syntax, the code block always executes at least one for the first time and the condition is checked at the end of each iteration.
   """
+
+  # Python do…while loop emulation example
+
+  from random import randint
+
+  MIN = 0
+  MAX = 10
+
+  secret_number = randint(MIN, MAX)
+
+  attempt = 0
+
+  while True:
+    input_number = int(input(f"Enter a number between {MIN} and {MAX}: "))
+    attempt += 1
+
+    if input_number > secret_number:
+      print("It should be smaller.")
+    elif input_number < secret_number:
+      print("It should be bigger.")
+    else:
+      print(f"Bingo! {attempt} attempt(s).")
+      break
