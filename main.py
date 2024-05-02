@@ -1,2 +1,38 @@
 if __name__ == "__main__":
-  print("Python do…while Loop Statement Emulation")
+  # Introduction to the do…while loop statement
+
+  """
+  If you have come from other programming languages such as JavaScript, Java or C#, you're a;ready familiar with the do ... while loop statement.
+
+  Unlike the while loop, the do .. while loop statement executes at least one iteration.
+  It checks the condition at the end of each iteration and executes a code block until the condition is False.
+
+  The following shows the pseudocode for the do ... while loop in Python:
+
+  do
+    # code block
+  while condition
+
+  Unfortunately, Python doesn't support the do ... while loop.
+  However, you can use the while loop and a break statement to emulate the do ... while loop statement.
+
+  First, specify the condition as True in the while loop like this:
+
+  while True:
+    # code block
+
+  This allows the code block to execute for the first time.
+  However, since the condition is always True, it creates an indefinite loop.
+  This is not what we expected.
+
+  Second, place a condition to break out of the while loop:
+
+  while True:
+    # code block
+
+    # break out of the loop
+    if condition:
+      break
+
+  In this syntax, the code block always executes at least one for the first time and the condition is checked at the end of each iteration.
+  """
